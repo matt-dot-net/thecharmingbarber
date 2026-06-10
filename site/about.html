@@ -71,7 +71,16 @@
         of age, gender, race, or ability, should be able to receive a five-star barbershop experience.
       </p>
 
-      <div class="about-body">
+      <div class="about-media-grid">
+        <img
+          src="img/about-us-800w.JPG"
+          srcset="img/about-us-400w.JPG 400w,
+                  img/about-us-800w.JPG 800w,
+                  img/about-us-1200w.JPG 1200w"
+          sizes="(max-width: 700px) 90vw, 340px"
+          alt="Hannah Stucky seated in the antique barber chair at The Charming Barber"
+        />
+        <div class="about-body">
         <p>
           With 10+ years of experience in the hair industry, Hannah loves to create custom
           haircuts that work for you. She specializes in classic barbering, beard shaping,
@@ -87,6 +96,7 @@
           Whenever she is not behind the chair, she spends her time gardening, traveling,
           practicing yoga, going out for live music, or playing video games.
         </p>
+        </div>
       </div>
 
       <!-- Stat highlights -->
@@ -107,24 +117,48 @@
     </div>
   </section>
 
-  <!-- PHOTO PLACEHOLDER -->
+  <!-- GALLERY -->
   <section class="section section--tan">
     <div class="container">
       <h2 class="section-title">The Shop</h2>
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1.5rem; max-width:900px; margin:0 auto;">
-        <div class="photo-placeholder">
-          <span class="photo-placeholder__icon">&#128247;</span>
-          <span>Photos coming soon</span>
-        </div>
-        <div class="photo-placeholder">
-          <span class="photo-placeholder__icon">&#128247;</span>
-          <span>Photos coming soon</span>
-        </div>
-        <div class="photo-placeholder">
-          <span class="photo-placeholder__icon">&#128247;</span>
-          <span>Photos coming soon</span>
-        </div>
+      <div class="gallery-scroll" aria-label="Photos of the barbershop">
+        <img
+          src="img/shop-chair-800w.JPG"
+          srcset="img/shop-chair-400w.JPG 400w, img/shop-chair-800w.JPG 800w"
+          sizes="(max-width: 600px) 240px, 315px"
+          alt="The antique green and gold barber chair"
+          loading="lazy"
+        />
+        <img
+          src="img/hannah-800w.JPG"
+          srcset="img/hannah-400w.JPG 400w, img/hannah-800w.JPG 800w"
+          sizes="(max-width: 600px) 240px, 315px"
+          alt="Hannah trimming a client's beard"
+          loading="lazy"
+        />
+        <img
+          src="img/window-800w.JPG"
+          srcset="img/window-400w.JPG 400w, img/window-800w.JPG 800w, img/window-1200w.JPG 1200w"
+          sizes="(max-width: 600px) 240px, 315px"
+          alt="The shop window logo reflected in the mirror"
+          loading="lazy"
+        />
+        <img
+          src="img/scissors-800w.JPG"
+          srcset="img/scissors-400w.JPG 400w, img/scissors-800w.JPG 800w"
+          sizes="(max-width: 600px) 240px, 315px"
+          alt="Barber shears on the station"
+          loading="lazy"
+        />
+        <img
+          src="img/waiting-area-800w.JPG"
+          srcset="img/waiting-area-400w.JPG 400w, img/waiting-area-800w.JPG 800w"
+          sizes="(max-width: 600px) 240px, 315px"
+          alt="The waiting area with green leather chairs"
+          loading="lazy"
+        />
       </div>
+      <p class="gallery-hint">&larr; scroll to see more &rarr;</p>
     </div>
   </section>
 

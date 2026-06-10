@@ -248,7 +248,7 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 .hero {
   background-color: var(--dark-brown);
   color: var(--text-light);
-  padding: 6rem 0 5rem;
+  padding: 0 0 4rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -265,9 +265,13 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
   pointer-events: none;
 }
 
-.hero__logo {
-  width: min(320px, 75vw);
-  margin: 0 auto 2.5rem;
+.hero__banner {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 45vw, 540px);
+  object-fit: cover;
+  border-bottom: 3px solid var(--gold);
+  margin-bottom: 3rem;
 }
 
 .hero__tagline {
@@ -428,6 +432,73 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
   color: var(--tan);
 }
 
+/* About media layout: portrait photo beside bio text */
+.about-media-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 340px) 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  max-width: 880px;
+  margin: 3rem auto 0;
+}
+
+.about-media-grid img {
+  width: 100%;
+  border-radius: var(--radius);
+  border-bottom: 4px solid var(--gold);
+}
+
+.about-media-grid .about-body {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .about-media-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-media-grid img {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
+
+/* ===== SCROLLING GALLERY ===== */
+.gallery-scroll {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5rem 0 1.25rem;
+  scrollbar-color: var(--gold) var(--light-tan);
+  scrollbar-width: thin;
+}
+
+.gallery-scroll::-webkit-scrollbar { height: 8px; }
+.gallery-scroll::-webkit-scrollbar-track { background: var(--light-tan); border-radius: 4px; }
+.gallery-scroll::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
+
+.gallery-scroll img {
+  height: 420px;
+  width: auto;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  border-radius: var(--radius);
+  border-bottom: 4px solid var(--gold);
+}
+
+.gallery-hint {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--medium-brown);
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .gallery-scroll img { height: 320px; }
+}
+
 /* Photo placeholder */
 .photo-placeholder {
   background-color: var(--light-tan);
@@ -566,7 +637,8 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
   .section { padding: 3.5rem 0; }
-  .hero { padding: 4rem 0 3.5rem; }
+  .hero { padding: 0 0 3rem; }
+  .hero__banner { margin-bottom: 2rem; }
   .new-client-notice { padding: 1.5rem; }
   .hero__ctas { flex-direction: column; align-items: center; }
   .btn { width: 100%; max-width: 320px; }
