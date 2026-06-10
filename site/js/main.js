@@ -28,10 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ===== ACTIVE NAV LINK =====
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  // Normalize "/about.html", "/about/", and "/about" to the same form;
+  // "/index" and "" normalize to "/"
+  const normalize = (p) => {
+    p = p.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+    return p === '/index' ? '/' : p;
+  };
+  const currentPath = normalize(window.location.pathname);
   document.querySelectorAll('.nav-menu a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+    if (normalize(link.getAttribute('href')) === currentPath) {
       link.classList.add('active');
     }
   });
