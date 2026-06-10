@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Charming Barber — Mechanicsburg, PA</title>
+  <meta name="description" content="The Charming Barber is a one-chair barbershop in Mechanicsburg, PA. Owned and operated by Hannah Stucky. Appointments only." />
+
+  <!-- Open Graph / link preview -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://thecharmingbarber.com/" />
+  <meta property="og:site_name"   content="The Charming Barber" />
+  <meta property="og:title"       content="The Charming Barber" />
+  <meta property="og:description" content="A one-chair barbershop in Mechanicsburg, PA — custom cuts for all ages, races &amp; genders. Book online." />
+  <meta property="og:image"       content="https://thecharmingbarber.com/img/TCB-Logo-black.jpeg" />
+  <meta property="og:image:alt"   content="The Charming Barber logo" />
+
+  <!-- iOS / Safari specifics -->
+  <meta name="apple-mobile-web-app-title" content="The Charming Barber" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="img/TCB-Logo-black.jpeg" type="image/jpeg" sizes="any" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NEW CLIENT NOTICE BANNER -->
+  <div class="notice-banner" role="banner" aria-label="New client notice">
+    &#9733;&nbsp; Currently not accepting new clients &mdash; <a href="#new-clients">join the waitlist</a> to be notified when spots open. &nbsp;&#9733;
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="The Charming Barber — home">
+        <img
+          src="img/TCB-Logo-1.PNG"
+          alt="The Charming Barber logo"
+          class="logo-img"
+        />
+      </a>
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ's</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <img
+        src="img/TCB-Logo-1.PNG"
+        alt="The Charming Barber"
+        class="hero__logo"
+      />
+      <p class="hero__tagline">
+        Welcome to The Charming Barber, a one-chair barbershop for folks with short hair
+        of all ages, races, and genders. Owned and operated by Hannah Stucky, a professional
+        barber from the Harrisburg area, who loves to create custom styles for you and your
+        whole family. Come on in, and let's create some fantastic hair together.
+      </p>
+      <div class="hero__ctas">
+        <a
+          href="https://thecharmingbarber.resurva.com/availability"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary"
+        >Book Now</a>
+        <a
+          href="#new-clients"
+          class="btn btn--secondary"
+        >New Client Waitlist</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW CLIENT NOTICE SECTION -->
+  <section class="section section--dark" id="new-clients">
+    <div class="container">
+      <div class="new-client-notice">
+        <p class="new-client-notice__eyebrow">&#9888; New Client Notice</p>
+        <h2 class="new-client-notice__heading">Not Currently Accepting New Clients</h2>
+        <p class="new-client-notice__body">
+          TCB is temporarily at capacity for new clients. Hannah wants to make sure every
+          client gets the attention and care they deserve, so she's keeping the chair list
+          small for now. The best way to get in is to join the waitlist — you'll be
+          notified as soon as a spot opens up.
+        </p>
+        <a
+          href="#WAITLIST_LINK_TBD"
+          class="btn btn--secondary"
+        >Join the New Client Waitlist</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY INFO -->
+  <section class="section section--tan">
+    <div class="container">
+      <h2 class="section-title">Key Info</h2>
+      <div class="info-grid">
+
+        <!-- Hours -->
+        <div class="info-card">
+          <div class="info-card__icon">&#128344;</div>
+          <h3>Hours</h3>
+          <table class="hours-table" aria-label="Shop hours">
+            <tbody>
+              <tr><td>Monday</td><td>10 AM – 6 PM</td></tr>
+              <tr><td>Tuesday</td><td>Closed</td></tr>
+              <tr><td>Wednesday</td><td>10 AM – 6 PM</td></tr>
+              <tr><td>Thursday</td><td>10 AM – 6 PM</td></tr>
+              <tr><td>Friday</td><td>10 AM – 6 PM</td></tr>
+              <tr><td>Saturday</td><td>10 AM – 2 PM</td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Prices -->
+        <div class="info-card">
+          <div class="info-card__icon">&#9986;</div>
+          <h3>Services &amp; Pricing</h3>
+          <ul class="price-list">
+            <li><span>Haircut</span><span class="price">$30</span></li>
+            <li><span>Haircut &amp; Beard Trim</span><span class="price">$35</span></li>
+            <li><span>Kid's Haircut</span><span class="price">$25</span></li>
+            <li><span>Beard Trim</span><span class="price">$15</span></li>
+            <li><span>Buzzcut</span><span class="price">$25</span></li>
+            <li><span>Buzzcut &amp; Beard Trim</span><span class="price">$30</span></li>
+          </ul>
+        </div>
+
+        <!-- Location & Contact -->
+        <div class="info-card">
+          <div class="info-card__icon">&#128205;</div>
+          <h3>Location &amp; Contact</h3>
+          <p class="address-text">
+            325 Manor Drive<br />
+            Mechanicsburg, PA 17050<br /><br />
+            Shares a building with<br />Denise Dombach's State Farm office.<br />
+            Entrance on the west side,<br />facing Manor Drive.
+          </p>
+          <a
+            href="https://www.instagram.com/thecharmingbarber"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            &#128247; @thecharmingbarber
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h4>The Charming Barber</h4>
+          <p>325 Manor Drive<br />Mechanicsburg, PA 17050</p>
+          <p style="margin-top:0.75rem;">
+            <a
+              href="https://www.instagram.com/thecharmingbarber"
+              target="_blank"
+              rel="noopener noreferrer"
+            >@thecharmingbarber</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Book an Appointment</h4>
+          <p>All appointments managed through Resurva.</p>
+          <p style="margin-top:0.75rem;">
+            <a
+              href="https://thecharmingbarber.resurva.com/availability"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Book Now &rarr;</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="faq.html">FAQ's</a></p>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 The Charming Barber &mdash; Mechanicsburg, PA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — The Charming Barber</title>
+  <meta name="description" content="Learn about Hannah Stucky and the story behind The Charming Barber barbershop in Mechanicsburg, PA." />
+
+  <!-- Open Graph / link preview -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://thecharmingbarber.com/about.html" />
+  <meta property="og:site_name"   content="The Charming Barber" />
+  <meta property="og:title"       content="About Us — The Charming Barber" />
+  <meta property="og:description" content="Meet Hannah Stucky — barber, London School of Barbering graduate, and founder of The Charming Barber in Mechanicsburg, PA." />
+  <meta property="og:image"       content="https://thecharmingbarber.com/img/TCB-Logo-black.jpeg" />
+  <meta property="og:image:alt"   content="The Charming Barber logo" />
+
+  <!-- iOS / Safari specifics -->
+  <meta name="apple-mobile-web-app-title" content="The Charming Barber" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="img/TCB-Logo-black.jpeg" type="image/jpeg" sizes="any" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="The Charming Barber — home">
+        <img
+          src="img/TCB-Logo-1.PNG"
+          alt="The Charming Barber logo"
+          class="logo-img"
+        />
+      </a>
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ's</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>About TCB</h1>
+      <p class="page-hero__sub">The story behind the chair</p>
+    </div>
+  </section>
+
+  <!-- ABOUT BODY -->
+  <section class="section">
+    <div class="container">
+      <p class="about-lead">
+        TCB was founded in 2026 by Hannah Stucky on the principle that everyone, regardless
+        of age, gender, race, or ability, should be able to receive a five-star barbershop experience.
+      </p>
+
+      <div class="about-body">
+        <p>
+          With 10+ years of experience in the hair industry, Hannah loves to create custom
+          haircuts that work for you. She specializes in classic barbering, beard shaping,
+          and family services. She is enthusiastic about continuing education and new trends
+          in the barber industry.
+        </p>
+        <p>
+          In 2018, she traveled to England to study traditional straight razor shaving,
+          earning a certificate from The London School of Barbering. In 2020, she received
+          her certification in Barbicide's Covid-19 Infection Control Course.
+        </p>
+        <p>
+          Whenever she is not behind the chair, she spends her time gardening, traveling,
+          practicing yoga, going out for live music, or playing video games.
+        </p>
+      </div>
+
+      <!-- Stat highlights -->
+      <div class="about-highlights">
+        <div class="highlight-card">
+          <div class="highlight-card__num">10+</div>
+          <div class="highlight-card__label">Years in the hair industry</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card__num">2018</div>
+          <div class="highlight-card__label">London School of Barbering</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card__num">Est. 2026</div>
+          <div class="highlight-card__label">Mechanicsburg, PA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO PLACEHOLDER -->
+  <section class="section section--tan">
+    <div class="container">
+      <h2 class="section-title">The Shop</h2>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1.5rem; max-width:900px; margin:0 auto;">
+        <div class="photo-placeholder">
+          <span class="photo-placeholder__icon">&#128247;</span>
+          <span>Photos coming soon</span>
+        </div>
+        <div class="photo-placeholder">
+          <span class="photo-placeholder__icon">&#128247;</span>
+          <span>Photos coming soon</span>
+        </div>
+        <div class="photo-placeholder">
+          <span class="photo-placeholder__icon">&#128247;</span>
+          <span>Photos coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--green" style="text-align:center;">
+    <div class="container">
+      <h2 style="color:var(--cream); margin-bottom:1rem;">Ready to get in the chair?</h2>
+      <p style="color:var(--tan); margin-bottom:2rem; max-width:520px; margin-left:auto; margin-right:auto;">
+        All appointments are managed through Resurva. Existing clients can book anytime —
+        new clients should join the waitlist below.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center;">
+        <a
+          href="https://thecharmingbarber.resurva.com/availability"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--primary"
+        >Book Now</a>
+        <a
+          href="#WAITLIST_LINK_TBD"
+          class="btn btn--secondary"
+        >New Client Waitlist</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h4>The Charming Barber</h4>
+          <p>325 Manor Drive<br />Mechanicsburg, PA 17050</p>
+          <p style="margin-top:0.75rem;">
+            <a
+              href="https://www.instagram.com/thecharmingbarber"
+              target="_blank"
+              rel="noopener noreferrer"
+            >@thecharmingbarber</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Book an Appointment</h4>
+          <p>All appointments managed through Resurva.</p>
+          <p style="margin-top:0.75rem;">
+            <a
+              href="https://thecharmingbarber.resurva.com/availability"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Book Now &rarr;</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="faq.html">FAQ's</a></p>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; 2026 The Charming Barber &mdash; Mechanicsburg, PA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
