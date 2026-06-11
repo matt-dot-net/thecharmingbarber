@@ -1,3 +1,27 @@
+/* ===== SELF-HOSTED FONTS (latin subset) ===== */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/lato-400.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/lato-700.woff2) format('woff2');
+}
+/* Playfair Display is a variable font — one file covers the 400–700 range */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../fonts/playfair-variable.woff2) format('woff2');
+}
+
 /* ===== CUSTOM PROPERTIES ===== */
 :root {
   --cream: #F4ECD8;
