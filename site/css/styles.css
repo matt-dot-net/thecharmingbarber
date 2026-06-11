@@ -369,7 +369,23 @@ h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
 .price-list li:last-child { border-bottom: none; }
 .price-list .price { font-weight: 700; color: var(--forest-green); }
 
-.address-text { font-size: 0.9rem; line-height: 1.8; }
+.address-text { font-size: 0.9rem; line-height: 1.8; font-style: normal; }
+
+.map-links {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+.map-links a {
+  color: var(--forest-green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.map-links a:hover { color: var(--terracotta); }
+.map-links span { color: var(--tan); }
 
 .social-link {
   display: inline-flex;
